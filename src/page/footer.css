@@ -1,0 +1,68 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.footerContainter {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footerLeft {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.github {
+  display: flex;
+  color: white;
+  padding: 8px;
+}
+.github p {
+  margin-left: 10px;
+}
+
+.gmail {
+  display: flex;
+  color: white;
+  padding: 8px;
+}
+.gmail p {
+  margin-left: 10px;
+}
+.phone {
+  display: flex;
+  color: white;
+  padding: 8px;
+}
+.phone p {
+  margin-left: 10px;
+}
+.footerRight {
+  display: flex;
+  padding: 15px;
+  justify-content: flex-end;
+}
+.footerRight .footerRightDiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.footerRight .footerRightDiv p {
+  font-size: 12px;
+  padding: 8px;
+}
+.footerRight .space {
+  width: 100px;
+}
+@media screen and (max-width: 689px) {
+  .footerContainter {
+    grid-template-columns: 1fr;
+  }
+  .footerRight {
+    justify-content: flex-start;
+  }
+}

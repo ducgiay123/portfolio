@@ -1,0 +1,58 @@
+.mask {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.into-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.mask::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+.frontImage {
+  height: 100%;
+  width: 100%;
+}
+.frontImage .content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.frontImage .content h1 {
+  font-size: 3rem;
+  padding: 15px 0 30;
+}
+.frontImage .content p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 20px;
+}
+.frontImage .content button {
+  margin: 5px 0.2rem;
+  border-color: white;
+  border: 1px solid;
+}
+.frontImage .content .transparentButton {
+  background-color: transparent;
+}
+@media screen and (max-width: 640px) {
+  .frontImage .content h1 {
+    font-size: 2rem;
+  }
+  .frontImage .content p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,54 @@
+.AboutPage {
+  width: 100%;
+  height: 100%;
+}
+.maskAboutPage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.into-imgAboutPage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.maskAboutPage::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.68;
+}
+.aboutContainer {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.aboutContainer .aboutContainerLeft {
+  padding-left: 8%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.selfIntroduction {
+  width: 420px;
+}
+.aboutContainer .aboutContainerLeft h1,
+h2,
+h3,
+h4 {
+  color: white;
+}
+.aboutContainer .aboutContainerLeft h4 {
+  color: white;
+  font-weight: 400;
+}
